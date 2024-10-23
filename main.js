@@ -13,3 +13,6 @@ function updateTotalPrice() {
     
     totalPriceElement.textContent = totalPrice.toFixed(2); // Update total price element
 }
+// Add event listeners to update total price when product or quantity changes
+productSelector.addEventListener('change', updateTotalPrice);
+quantityInput.addEventListener('input', updateTotalPrice);
